@@ -1,0 +1,37 @@
+<html><head><title>project</title></head>
+<body bgcolor="#000066">
+<form name="redirect">
+<center>
+<FONT FACE="Comic Sans MS, cursive" COLOR="#FFFFFF">
+<br />
+<br />
+<BR />
+<br />
+<br /><H1>%%%%%% STARTS IN %%%%%%</H1><br><br>
+<form>
+<input type="text" size="3" name="redirect2">
+</form>
+seconds</b></font>
+</center>
+
+<script>
+var targetURL="do not open/ppoorr.html"
+var countdownfrom=5
+var currentsecond=document.redirect.redirect2.value=countdownfrom+1
+function countredirect(){
+if (currentsecond!=1){
+currentsecond-=1
+document.redirect.redirect2.value=currentsecond
+}
+else{
+window.location=targetURL
+return
+}
+setTimeout("countredirect()",1000)
+}
+
+countredirect()
+</script>
+</form>
+</body>
+</html>
